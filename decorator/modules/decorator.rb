@@ -7,6 +7,7 @@ class Coffee
     %w(coffee water sugar)
   end
 end
+
 module DoubleCoffee
   def cost
     super * 2
