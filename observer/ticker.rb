@@ -1,4 +1,5 @@
 require 'observer'
+require './price'
 
 class Ticker          ### Periodically fetch a stock price.
   include Observable
