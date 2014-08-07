@@ -19,7 +19,7 @@ class Ticker          ### Periodically fetch a stock price.
         price = current_price
         notify_observers(Time.now, current_price)
       end
-      
+
       sleep 1
     end
   end
