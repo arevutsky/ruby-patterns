@@ -1,13 +1,9 @@
-class DoubleCoffee
-  def initialize(component)
-    @component = component
-  end
+require 'forwardable'
+
+class DoubleCoffee < CoffeeDecorator
+  def_delegator :@component, :ingredients
 
   def cost
     @component.cost * 2
-  end
-
-  def ingredients
-    @component.ingredients
   end
 end
